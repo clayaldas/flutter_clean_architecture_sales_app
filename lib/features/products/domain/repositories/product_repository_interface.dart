@@ -4,6 +4,6 @@ import "package:flutter_clean_architecture_sales_app/features/products/domain/en
 
 abstract class ProductRepositoryInterface {
   // Métodos abstractos para luego implementar
-  Future<Either<Failure, ProductEntity>> getProduct(int productId);
+  Future<Either<Failure, ProductEntity>>? getProduct(int productId);
   Future<Either<Failure, List<ProductEntity>>> getProducts();
 }
